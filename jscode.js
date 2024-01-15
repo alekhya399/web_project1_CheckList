@@ -20,7 +20,7 @@ function Add(){
 function Edit(newitemedit){
     let spanElement = newitemedit.parentNode.querySelector('span');
     let newText = prompt("Edit the task:", spanElement.innerText);
-    if (newText !== "") {
+    if (newText !== null ){
         spanElement.innerText = newText;
     }else{
         alert("Please Do Changes or Else Same Output");
